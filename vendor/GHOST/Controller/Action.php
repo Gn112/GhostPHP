@@ -2,15 +2,17 @@
 
 namespace GHOST\Controller;
 
+use stdClass;
+
 abstract class Action {
 
     protected $view;
 
     public function __construct()
     {
-        $this->view = new \stdClass();
+        $this->view = new stdClass();
     }
-    protected function render($view, $layout)
+    protected function render($view, $layout = 'baseLoyout')
     {
         $this->view->page = $view;
 

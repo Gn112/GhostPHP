@@ -7,9 +7,10 @@ class Connection
 {
     public static function getDB()
     {
-        $host = "localhost";
-        $dbname = 'buffDB';
-        $username = 'root';
+        // Configure os parâmetros de conexão com o BD
+        $host = "";
+        $dbname = '';
+        $username = '';
         $password = '';
         
         try
